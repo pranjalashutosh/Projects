@@ -86,25 +86,36 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
 
 const changeIcon = (songIndex)=>{
     Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
-console.log(element.id)
+
         element.classList.remove('fa-pause-circle');
         element.classList.add('fa-play-circle');
+
+       if(element.id==songIndex){
+        element.classList.remove('fa-play-circle');
+        element.classList.add('fa-pause-circle');
+        
+       }
+        
+
     })
 
 }
 
 
-document.getElementById('next').addEventListener('click' ,(e)=>{
-    changeIcon(songIndex)
+document.getElementById('next').addEventListener('click' ,()=>{
+    
    if(songIndex>=3){
     songIndex=1;
+    changeIcon(songIndex)
    }
    else{
     songIndex=songIndex+1;
+    changeIcon(songIndex)
    }
     audioElement.src=`songs/${songIndex}.m4a`;
     audioElement.currentTime=0;
     audioElement.play();
+    //console.log(masterPlay)
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
    
@@ -113,9 +124,11 @@ document.getElementById('next').addEventListener('click' ,(e)=>{
 document.getElementById('previous').addEventListener('click' ,()=>{
     if(songIndex<=1){
      songIndex=3;
+     changeIcon(songIndex)
     }
     else{
      songIndex=songIndex-1;
+     changeIcon(songIndex)
     }
      audioElement.src=`songs/${songIndex}.m4a`;
      audioElement.currentTime=0;
