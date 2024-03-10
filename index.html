@@ -15,27 +15,24 @@
         </ul>
     </nav>
 
-<div class="container">
+<div class="container" id="container" >
     
     <div class="songList"><h1>Best of Vishnu</h1>
         <div class="songItemContainer">
             <div class="songItem">
-                <img src="cover1.jpg" alt="1">
-                <span>Tum Pukarlo</span>
-                <span class="songListPlay"> <span class="timeStamp"> 01:02 <i class="fa-regular fa-play-circle" ></i></span></span>
-
+                <img alt="1">
+                <span class="songName"></span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
             </div>
             <div class="songItem">
-                <img src="cover1.jpg" alt="1">
-                <span>Babul</span>
-                <span class="songListPlay"> <span class="timeStamp"> 01:29 <i class="fa-regular fa-play-circle" ></i></span></span>
-
+                <img alt="1">
+                <span class="songName"></span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
             </div>
             <div class="songItem">
-                <img src="cover1.jpg" alt="1">
-                <span>Tu  Hai aasman mein</span>
-                <span class="songListPlay"> <span class="timeStamp"> 0:53 <i class="fa-regular fa-play-circle" ></i></span></span>
-
+                <img alt="1">
+                <span class="songName"></span>
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
             </div>
         </div>
     </div>
@@ -47,9 +44,9 @@
     <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
     <div class="icons">
         <!-- fontawesome icons -->
-        <i class="fa-solid fa-3x fa-backward"></i>
+        <i class="fa-solid fa-3x fa-backward" id="previous"></i>
         <i class="fa-regular fa-3x fa-play-circle" id="masterPlay"></i>
-        <i class="fa-solid fa-3x fa-forward"></i>
+        <i class="fa-solid fa-3x fa-forward" id="next"></i>
     </div>
     <div class="songInfo">
         <img src="playing.gif" width="42px" alt="" id="gif"> Tum Pukarlo

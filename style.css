@@ -41,7 +41,7 @@ nav ul li {
 
 
 .container {
-    min-height: 70vh;
+    min-height: 80vh;
     
     color:white;
     font-family: 'Varela Round' , sans-serif;
@@ -119,4 +119,7 @@ nav ul li {
 .songInfo img{
     opacity: 0;
     transition: opacity 0.4s ease-in;
+}
+.songItemPlay{
+    margin: 0 23px;
 }
