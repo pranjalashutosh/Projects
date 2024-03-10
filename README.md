@@ -6,7 +6,7 @@ What's this all about?
 Ever wished you could bring the vibe of Spotify to your own web browser? Well, you're in luck! This project is all about recreating the magic of Spotify right in your browser using nothing but the power of HTML, CSS, and JavaScript. 🎉
 
 Features 🌟
-🎵 Music Playback: Listen to your favorite tracks with ease.
+🎵 Music Playback: Currently, I have only added three songs that have been sung by me.
 🎨 Slick Interface: A smooth, modern UI that's a pleasure to navigate.
 📑 Playlist Management: Create, edit, and manage your playlists effortlessly. (yet to add this feature)
 🎧 Search Functionality: Find any track, album, or artist in a heartbeat. (yet to add this feature)
